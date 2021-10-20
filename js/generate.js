@@ -1,3 +1,4 @@
+//CREDITS TO ANIA KUBOW
 //Das DOMContentLoaded-Event wird ausgelöst, wenn das initiale HTML-Dokument vollständig geladen und geparst ist
 document.addEventListener('DOMContentLoaded', () => {
     //Hier werden die css bzw. html-klassen JS-Elemnten zugewiesen, damit diese innerhalb des Scriptes verwendet werden können
@@ -30,3 +31,4 @@ document.addEventListener('DOMContentLoaded', () => {
     beerbutton.addEventListener('click', getBeer)
   
 })
+
