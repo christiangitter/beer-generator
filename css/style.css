@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 225, 180);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,15 +20,24 @@
 .random-beer{
     color: black;
     font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.tagline {
+    color: black;
+    font-size: 15px;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .description {
     color: black;
     font-size: 20px;
-    max-width: 70vw;
+    max-width: 50vw;
     text-align: center;
     margin-top: 30px;
+    font-weight: 200;
 }
 
 .beer-button a{
@@ -38,8 +50,37 @@
     justify-content: center;
     border-radius: 50%;
     margin-top: 20px;
+    border: 5px solid rgb(252, 215, 5);
+}
+
+.beer-button a:hover{
+    border: 5px solid rgb(218, 185, 0);
 }
 
 .beer-button .icon {
     height:100px;
 }
+
+.footer {
+    background-color:rgb(255, 225, 180);;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+#wavy-header {
+    max-height: 8vmin;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    -webkit-filter: drop-shadow( 5px 5px 3px rgba(32, 32, 32, 0.5));
+  filter: drop-shadow( 5px 5px 3px rgba(32, 32, 32, 0.5));
+  }

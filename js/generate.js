@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const beerbutton = document.querySelector('.beer-button')
     const randombeer = document.querySelector('.random-beer')
     const beerdes = document.querySelector('.description')
+    const tag = document.querySelector('.tagline')
 
     //die Funktion getBeer wird erstellt
     function getBeer(e) {
@@ -19,12 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
            //hier werden die einzelnen Array-Elemnte der Variablen zur Verwendung zugewiesen
            const beername = data[0].name
            const beerdescription = data[0].description
+           const tagline = data[0].tagline
            const {volume} = data[0]
            const volumeValue = volume.value
            const volumeUnit = volume.unit
            //Hier wird der Inhalt der JS-Variablen den oberen CSS bzw. HTML-Klassen zugewiesen
            randombeer.innerHTML = beername + ' ' + volumeValue + ' ' + volumeUnit
            beerdes.innerHTML = beerdescription
+           tag.innerHTML = tagline
        })
     }
     //wenn der beerbutton geklickt wird, wird die Funktion getBeer ausgelöst
