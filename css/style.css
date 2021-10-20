@@ -67,11 +67,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .footer p{
     font-size: 12px;
     font-weight: 200;
+}
+
+.footer a{
+    text-decoration: none;
 }
 
 #wavy-header {
